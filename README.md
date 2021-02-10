@@ -1,3 +1,8 @@
+## Download the celeb-a dataset (script from pytorch project)
+
+`bash download.sh celeba-hq-dataset`
+## Original content
+
 ## StarGAN v2 &mdash; Official TensorFlow Implementation [[Paper]](https://arxiv.org/abs/1912.01865) [[Pytorch]](https://github.com/clovaai/stargan-v2)
 ## Implemented by [Junho Kim](http://bit.ly/jhkim_ai)
 
@@ -10,12 +15,12 @@
 * `Tensorflow-addons == 0.9.1`
 * `opencv-python`
 * `Pillow`
-* `tqdm`
+* `tqdm==4.47.0`
 
 ## Usage
 ```
 ├── dataset
-   └── YOUR_DATASET_NAME
+   └── celeba_hq
        ├── train
            ├── domain1 (domain folder)
                ├── xxx.jpg (domain1 image)
@@ -47,7 +52,7 @@
 
 ### Train
 ```
-python main.py --dataset celebA-HQ_gender --phase train
+python main.py --dataset celeba_hq --phase train
 ```
 
 ### Test
